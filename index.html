@@ -48,11 +48,11 @@
         <img src="assets/img/myj_profile.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Ye-Ji Mun</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://twitter.com/YeJiMun1" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
+          <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
+          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+          <a href="https://www.linkedin.com/in/ye-ji-mun/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
@@ -97,7 +97,7 @@
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Graduate Student Researcher</h3>
             <p stye="text-align:center/left/right;">
-              I am a third-year Ph.D. candidate at University of Illinois, Urbana-Champaign (UIUC). 
+              I am a fourth-year Ph.D. candidate at University of Illinois, Urbana-Champaign (UIUC). 
               My advisor is Prof. Katherine Driggs-Campbell, I am doing research in Human-Centered Autonomy Laboratory (HCAL). 
               Prior to UIUC, I recieved my B.S. in Electronics Engineering at Ewha Womans University, Seoul, South Korea in 2018.
               My research interest is in human-robot interaction and robust learning-based decision-making.
@@ -114,6 +114,7 @@
                   <ul>-->
                   <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> yejimun2@illinois.edu</li>
                   <li><i class="icofont-rounded-right"></i> <strong>Office:</strong> 268 Coordinated Science Laboratory, UIUC </li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Resume:</strong> <a href="https://drive.google.com/file/d/1dgF1mqL47xjckl-YUP5_0Eau_oaJ-bwu/view?usp=share_link">[Resume]</a>
           
                 </ul>
               </div>
@@ -170,8 +171,9 @@
                 <h4>Human Centered Autonomy Lab, Research Assistant</h4>
                 <h5>Aug.2019 - Present</h5>
                 <ul>
-                  <li>Develop a deep reinforcement learning algorithm that performs occlusion-aware planning in crowded environments.</li>
+                  <li>Develop a deep reinforcement learning algorithm that performs occlusion-aware planning in partially observable, crowded environments. </li>
                   <li>Establish an intention-aware planning for human-robot collaborations in manufacturing assembly task. </li>
+                  <li>Design robot systems that influence humans over long-term interaction towards desired behaviors. </li>
                 </ul>
               </div>
               <div class="resume-item">
@@ -197,7 +199,7 @@
     </section><!-- End Resume Section -->
 
     <!-- ======= Research Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <section id="research" class="research">
       <div class="container">
         <div class="section-title">
           <h2>Research</h2>
@@ -217,7 +219,7 @@
                 However, all sensors still have limited sensing capabilities which can result in serious accidents due to the unobservable risk. Humans, on the other hand, have great 
                 insights to handle unobservable situations, and many researchers have attempted to adapt these human-like behaviors. This work aims to incorporate interaction between 
                 road users to deal with decision-making under occlusion cases during navigation. The figure shows a mobile robot navigating in crowds and its environmental observations in probability of occupancy. Agent 0,1 and 2 is out side of robot's field of view.
-                <a href="https://yejimun.github.io/PaS_CrowdNav_video.html">[Video]</a> <a href="https://github.com/yejimun/PaS_CrowdNav">[Code]</a>
+                <a href="https://arxiv.org/abs/2210.00552">[Paper]</a> <a href="https://yejimun.github.io/PaS_CrowdNav_video.html">[Video]</a> <a href="https://github.com/yejimun/PaS_CrowdNav">[Code]</a> <a href="https://techxplore.com/news/2022-11-autonomous-mobile-robots-crowded-spaces.html">[Article]</a>
               
               </p>
             </div>
@@ -237,8 +239,23 @@
                 <!-- The human needs to recognize the robot's capabilities to come up with better collaborating strategies. -->
                 Human's intentions are usually not fully observable and may change during the process.  <!--and the robot's capabilitie-->
                 Accuratly tracking the human intentions and planning tasks accordingly will greatly enhance the collaboration performance.
+                <a href="https://arxiv.org/abs/2203.09063">[Paper]</a> 
               </p>
             </div>
+          </div>
+        </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-lg-offset-4" data-aos="fade-right">
+            <img src="assets/img/influence.PNG" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Towards Robots that Influence Humans over Long-Term Interaction</h3>
+            <p stye="text-align:center/left/right;">
+              When humans and robots interact, their influence on each other can have critical impact on their task performance. Consider an autonomous car trying to merge into a lane where human-driven cars are passing by. If the autonomous car cannot make the human-driven car slow down, it will not be able to change lanes. Prior works have developed frameworks that enable robots to influence humans towards desired behaviors. However, these approaches are only effective in the short-term as they assume that the robot actions can influence the human  in a consistent way. Our central insight is that humans are dynamic: people adapt to robots, and behaviors which are influential now may fall short over repeated interactions. <!-- Thus, we explore long-term influence.-->
+              <a href="https://arxiv.org/abs/2209.10588">[Paper]</a> <a href="https://www.youtube.com/watch?v=ydO83cgjZ2Q">[Video]</a>
+            </p>
           </div>
         </div>
       </div>
@@ -246,7 +263,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
+          <div class="col-lg-4 col-lg-offset-4" data-aos="fade-right">
             <img src="assets/img/adv_examples.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
@@ -278,64 +295,69 @@
               <h3>Manuscripts under Review</h3>     
                 <div>                       
                   <p>[1] <strong>Occlusion-aware crowd navigation using people as sensors</strong>  </p>
-                  <p>International Conference on Intelligent Robots and Systems (IROS), IEEE 2022 </p> 
-                  <p><strong>Y.-J. Mun</strong>, & M. Itkina & S. Liu & K. Driggs-Campbell</p>
-                </div> 
+                  <p>arXiv preprint arXiv:2210.00552 (2022)</p> 
+                  <p><strong>Y.-J. Mun</strong>, M. Itkina, S. Liu, K. Driggs-Campbell</p>
+                </div> <a href="https://arxiv.org/abs/2210.00552">[Paper]</a> <a href="https://yejimun.github.io/PaS_CrowdNav_video.html">[Video]</a> <a href="https://github.com/yejimun/PaS_CrowdNav">[Code]</a>
                 <div>                       
                   <p>[2] <strong>Hierarchical Intention Tracking for Robust Human-Robot Collaboration in Industrial Assembly Task</strong>  </p>
-                  <p>International Conference on Intelligent Robots and Systems (IROS), IEEE 2022</p> 
-                  <p>Z. Huang*<strong>Y.-J. Mun*</strong> & X. Li & Y. Xie & N. Zhong & W. Liang & J. Geng & T. Chen & K. Driggs-Campbell</p>
-                </div> 
+                  <p>arXiv: 2203.09063, 2022</p> 
+                  <p>Z. Huang*,<strong>Y.-J. Mun*</strong>, X. Li, Y. Xie, N. Zhong, W. Liang, J. Geng, T. Chen, and K. Driggs-Campbell</p>
+                </div> <a href="https://arxiv.org/abs/2203.09063">[Paper]</a> 
+                <div>                       
+                  <p>[3] <strong>Towards Robots that Influence Humans over Long-Term Interaction</strong>  </p>
+                  <p>arXiv preprint arXiv:2209.10588 (2022). </p> 
+                  <p>3.	S. Sagheb, <strong>Y.-J. Mun</strong>, N. Ahmadian, B. A. Christie, A. Bajcsy, K. Driggs-Campbell, and D. P. Losey</p>
+                </div> <a href="https://arxiv.org/abs/2209.10588">[Paper]</a> <a href="https://www.youtube.com/watch?v=ydO83cgjZ2Q">[Video]</a>
               <h3>Conference Papers</h3> 
                 <div>                       
                   <p>[1] <strong>Seamless Interaction Design with Coexistence and Cooperation Modes for Robust Human-Robot Collaboration</strong>  </p>
                   <p>International Conference on Automation Science and Engineering (CASE), IEEE, 2022</p> 
-                  <p>Z. Huang*<strong>Y.-J. Mun*</strong> & X. Li & Y. Xie & N. Zhong & W. Liang & J. Geng & T. Chen & K. Driggs-Campbell</p>
-                </div> 
+                  <p>Z. Huang*<strong>Y.-J. Mun*</strong>, X. Li, Y. Xie, N. Zhong, W. Liang, J. Geng, T. Chen, and K. Driggs-Campbell</p>
+                </div> <a href="https://arxiv.org/abs/2206.01775">[Paper]</a> 
                 <div>                       
                   <p>[2] <strong>Multi-agent variational occlusion inference using people as sensors</strong>  </p>
                   <p>International Conference on Robotics and Automation (ICRA), IEEE 2022</p> 
-                  <p>M. Itkina<strong>Y.-J. Mun</strong> & K. Driggs-Campbell & M. J. Kochenderfer</p>
-                </div> 
+                  <p>M. Itkina, <strong>Y.-J. Mun</strong>, K. Driggs-Campbell, and M. J. Kochenderfer</p>
+                </div> <a href="https://ieeexplore.ieee.org/document/9811774">[Paper]</a> <a href="https://www.youtube.com/watch?v=cTHl5nDBNBM">[Video]</a> <a href="https://github.com/sisl/MultiAgentVariationalOcclusionInference">[Code]</a>
                 <div> 
                   <p>[3]<strong>[Oral] Correcting misclassified image features with convolutional coding</strong></p>
                   <p> In Proceedings of the Korean Society of Broadcast Engineers Conference (pp. 11-14)</p>
-                  <p><strong>Mun, Y. J.</strong>, Kim, N., Lee, J., & Kang, J. W.  </p>
-                </div>
+                  <p><strong>Mun, Y. J.</strong>, Kim, N., Lee, J., Kang, J. W.  </p>
+                </div> <a href="https://koreascience.kr/article/CFKO201815540966990.page">[Paper]</a> 
 
 
               <h3>Journal</h3>     
                 <div>                       
                   <p>[1] <strong>Ensemble of Random Binary Output Encoding for Adversarial Robustness</strong>  </p>
                   <p>IEEE Access, 7, 124632-124640.</p> 
-                  <p><strong>Mun, Y. J.</strong>, & Kang, J. W.</p>
-                </div> 
+                  <p><strong>Mun, Y. J.</strong> and Kang, J. W.</p>
+                </div> <a href="https://ieeexplore.ieee.org/document/8813035">[Paper]</a> 
 
               <h3>Workshops</h3>    
                 <div>                       
                   <p>[1] <strong>Insights from an Industrial Collaborative Assembly Project: Lessons in Research and Collaboration</strong>  </p>
                   <p>Cobots and WotF, International Conference on Robotics and Automation (ICRA), IEEE, 2022</p> 
-                  <p>1.	T. Chen & Z. Huang & J. Motes & J. Geng & Q. M. Ta & H. Dinkel & H. Abdul-Rashid & J. Myers & </strong>Y.-J. Mun</strong>, & W. Lin & Y. Huang & S. Liu & M. Morales & N. M. Amato & K. Driggs-Campbell & and T. Bretl</p>
-                </div>  
+                  <p>1.	T. Chen, Z. Huang, J. Motes, J. Geng, Q. M. Ta, H. Dinkel, H. Abdul-Rashid, J. Myers, </strong>Y.-J. Mun</strong>, W. Lin, Y. Huang, S. Liu, M. Morales, N. M. Amato, K. Driggs-Campbell, and T. Bretl</p>
+                </div>  <a href="https://arxiv.org/abs/2205.14340">[Paper]</a> 
                 <div>                       
                   <p>[2] <strong>Occlusion-aware crowd navigation using people as sensors</strong>  </p>
                   <p>16th Women in Machine Learning Workshop (WiML), NeurIPS 2021</p> 
-                  <p><strong>Y.-J. Mun</strong>, & M. Itkina & K. Driggs-Campbell</p>
+                  <p><strong>Y.-J. Mun</strong>, M. Itkina, and K. Driggs-Campbell</p>
                 </div>  
                 <div>                       
                   <p>[3] <strong>Multi-agent variational occlusion inference using people as sensors</strong>  </p>
                   <p>Bay Area Robotics Symposium (BARS), 2021</p> 
-                  <p>M. Itkina & <strong>Y.-J. Mun</strong>, & K. Driggs-Campbell</p>
+                  <p>M. Itkina, <strong>Y.-J. Mun</strong>, and K. Driggs-Campbell</p>
                 </div>  
                 <div>                       
                   <p>[4] <strong>Safe crowd navigation in the presence of occlusions</strong>  </p>
                   <p>15th Women in Machine Learning Workshop (WiML), NeurIPS 2020</p> 
-                  <p><strong>Y.-J. Mun</strong>, & M. Itkina & K. Driggs-Campbell</p>
+                  <p><strong>Y.-J. Mun</strong>,, M. Itkina, and K. Driggs-Campbell</p>
                 </div>  
                 <div>                       
                   <p>[5] <strong>Variational occlusion inference using people as sensors</strong>  </p>
                   <p>15th Women in Machine Learning Workshop (WiML), NeurIPS 2020</p> 
-                  <p>M. Itkina & <strong>Y.-J. Mun</strong>, & K. Driggs-Campbell</p>
+                  <p>M. Itkina, <strong>Y.-J. Mun</strong>, and K. Driggs-Campbell</p>
                 </div>
                              
             </div>
