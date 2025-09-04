@@ -178,39 +178,20 @@
     items: 1
   });
 
-  // Init AOS
+  // Disable AOS completely for faster loading
   function aos_init() {
-    // Show loading indicator
-    $('#loading-indicator').show();
+    // Hide loading indicator immediately
+    $('#loading-indicator').hide();
+    $('main').addClass('loaded');
     
-    AOS.init({
-      duration: 600,
-      easing: "ease-out-cubic",
-      once: true,
-      offset: 50,
-      delay: 0,
-      disable: 'mobile', // Disable on mobile for better performance
-      startEvent: 'DOMContentLoaded' // Start earlier
-    });
-    
-    // Hide loading indicator after AOS is initialized
-    setTimeout(function() {
-      $('#loading-indicator').hide();
-      $('main').addClass('loaded');
-    }, 800);
+    // Ensure all sections are visible immediately
+    $('section').css('opacity', '1');
+    $('[data-aos]').css('opacity', '1');
   }
   
-  // Initialize AOS when document is ready instead of waiting for all resources
+  // Initialize immediately when document is ready
   $(document).ready(function() {
     aos_init();
-  });
-  
-  // Fallback: ensure sections are visible even if AOS fails
-  $(document).ready(function() {
-    setTimeout(function() {
-      $('section').css('opacity', '1');
-      $('#loading-indicator').hide();
-    }, 1500);
   });
 
 })(jQuery);

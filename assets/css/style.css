@@ -280,17 +280,22 @@ h1, h2, h3, h4, h5, h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 1 !important;
 }
 
-/* Ensure sections are visible even during AOS loading */
+/* Ensure all content is visible immediately */
 section[data-aos] {
   opacity: 1 !important;
 }
 
 section[data-aos].aos-animate {
   opacity: 1 !important;
+}
+
+/* Make sure all elements are visible */
+[data-aos] {
+  opacity: 1 !important;
+  transform: none !important;
 }
 
 .section-bg {
