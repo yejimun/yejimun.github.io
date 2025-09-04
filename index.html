@@ -62,6 +62,7 @@
           <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Education</span></a></li>
           <li><a href="#research"><i class="bx bx-book-content"></i> Research</a></li>
+          <li><a href="#skills"><i class="bx bx-book-content"></i> Skills</a></li>
           <li><a href="#teaching"><i class="bx bx-book-content"></i> Teaching</a></li>
           <li><a href="#honors"><i class="bx bx-book-content"></i> Honors</a></li>
           <li><a href="#publication"><i class="bx bx-server"></i> Publication</a></li>
@@ -83,6 +84,14 @@
   </section>End Hero -->
 
   <main id="main">
+    <!-- Loading indicator -->
+    <div id="loading-indicator" class="text-center py-4" style="display: none;">
+      <div class="spinner-border text-primary" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <p class="mt-2">Loading content...</p>
+    </div>
+    
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
@@ -101,7 +110,7 @@
             <p stye="text-align:center/left/right;">
               I am a Ph.D. candidate at the University of Illinois Urbana-Champaign (UIUC) in the Electrical and Computer Engineering department. 
               Prior to joining UIUC, I received my B.S. in Electronics Engineering at Ewha Womans University, Seoul, South Korea in 2018.
-              My research interest is in <strong>robot planning, perception, machine learning, human-robot interaction, and active inference</strong>.
+              My research interest is in <strong>robot planning, perception, machine learning, human-robot interaction, active inference, and foundation models.</strong>.
             </p>
  
             <div class="row">
@@ -235,6 +244,7 @@
                 However, all sensors still have limited sensing capabilities which can result in serious accidents due to unobservable risks. Humans, on the other hand, have great 
                 insights to handle their limited perception, and many researchers have attempted to adapt these human-like behaviors. This work aims to incorporate interaction between 
                 road users to deal with decision-making under occlusion cases during navigation. The figure shows a mobile robot navigating in crowds and its environmental observations in probability of occupancy. Agent 0,1 and 2 is out side of robot's field of view. -->
+                
                 ICRA 2023 <a href="https://arxiv.org/abs/2210.00552">[Paper1]</a> <a href="https://yejimun.github.io/PaS_CrowdNav_video.html">[Video1]</a> <a href="https://github.com/yejimun/PaS_CrowdNav">[Code1]</a> <a href="https://techxplore.com/news/2022-11-autonomous-mobile-robots-crowded-spaces.html">[Article]</a>
                 <br>
                 ICRA 2022 <a href="https://ieeexplore.ieee.org/document/9811774">[Paper2]</a> <a href="https://www.youtube.com/watch?v=cTHl5nDBNBM">[Video2]</a> <a href="https://github.com/sisl/MultiAgentVariationalOcclusionInference">[Code2]</a>
@@ -330,39 +340,85 @@
     </section><!-- End research Section -->
 
     <!-- ======= Robot Section ======= -->
-    <section id="robot" class="resume">
+    <!-- <section id="robot" class="resume">
       <div class="container">
         <div class="section-title">
           <h2>Robot Experience</h2>
         </div>
 
         <div class="row">
-          <!-- Robot 1 -->
+          Robot 1
           <div class="col-lg-3 col-md-6 mb-4 text-center">
             <img src="assets/videos/gem_demo.gif" alt="Robot 1" class="img-fluid">
             <p class="mt-2"><strong>GEM e2 & e4</strong></p>
           </div>
 
           <!-- Robot 2 -->
-          <div class="col-lg-3 col-md-6 mb-4 text-center">
+          <!-- <div class="col-lg-3 col-md-6 mb-4 text-center">
             <img src="assets/videos/turtlebot_demo.gif" alt="Robot 2" class="img-fluid">
             <p class="mt-2"><strong>Turtlebot 2i</strong></p>
-          </div>
+          </div> -->
 
           <!-- Robot 3 -->
-          <div class="col-lg-3 col-md-6 mb-4 text-center">
+          <!-- <div class="col-lg-3 col-md-6 mb-4 text-center">
             <img src="assets/videos/ur5_demo.gif" alt="Robot 3" class="img-fluid">
             <p class="mt-2"><strong>UR5e</strong></p>
-          </div>
+          </div> -->
 
           <!-- Robot 4 -->
-          <div class="col-lg-3 col-md-6 mb-4 text-center">
+          <!-- <div class="col-lg-3 col-md-6 mb-4 text-center">
             <img src="assets/videos/kinova_demo.gif" alt="Robot 4" class="img-fluid">
             <p class="mt-2"><strong>Kinova Gen3</strong></p>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-15">
+            <ul>
+              <li></i> <strong>Programming Languages:</strong> Python, C++/C, Matlab, HTML, LaTeX</li>
+              <li></i> <strong>Software:</strong> PyTorch, Tensorflow, OpenAI Gym, ROS, MoveIt, Gazebo, Docker </li>
+              <li></i> <strong>Hardware:</strong> GEM e2, e4, Turtlebot 2i, UR5e, Kinova Gen3</li>
+            <ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- Robot 1 -->
+        <div class="col-lg-3 col-md-6 mb-4 text-center">
+          <img src="assets/videos/gem_demo.gif" alt="Robot 1" class="img-fluid">
+          <p class="mt-2"><strong>GEM e2 & e4</strong></p>
+        </div>
+
+        <!-- Robot 2 -->
+        <div class="col-lg-3 col-md-6 mb-4 text-center">
+          <img src="assets/videos/turtlebot_demo.gif" alt="Robot 2" class="img-fluid">
+          <p class="mt-2"><strong>Turtlebot 2i</strong></p>
+        </div>
+
+        <!-- Robot 3 -->
+        <div class="col-lg-3 col-md-6 mb-4 text-center">
+          <img src="assets/videos/ur5_demo.gif" alt="Robot 3" class="img-fluid">
+          <p class="mt-2"><strong>UR5e</strong></p>
+        </div>
+
+        <!-- Robot 4 -->
+        <div class="col-lg-3 col-md-6 mb-4 text-center">
+          <img src="assets/videos/kinova_demo.gif" alt="Robot 4" class="img-fluid">
+          <p class="mt-2"><strong>Kinova Gen3</strong></p>
+        </div>
+      </div>
+  </section><!-- End Teaching Section -->
 
 
     <!-- ======= Teaching Section ======= -->
@@ -483,14 +539,14 @@
               <div> 
                 <p>[9]<strong>[Oral] Correcting misclassified image features with convolutional coding</strong></p>
                 <p> In Proceedings of the Korean Society of Broadcast Engineers Conference (pp. 11-14)</p>
-                <p><strong>Mun, Y. J.</strong>, Kim, N., Lee, J., and Kang, J. W.  </p>
+                <p><strong>Y.-J. Mun</strong>, N. Kim, J. Lee, and J. W. Kang  </p>
               </div> <a href="https://koreascience.kr/article/CFKO201815540966990.page">[Paper]</a> 
 
               <h3>Journal</h3>     
                 <div>                       
                   <p>[1] <strong>Ensemble of Random Binary Output Encoding for Adversarial Robustness</strong>  </p>
                   <p>IEEE Access, 7, 124632-124640.</p> 
-                  <p><strong>Mun, Y. J.</strong> and Kang, J. W.</p>
+                  <p><strong>Y.-J. Mun</strong> and J. W. Kang</p>
                 </div> <a href="https://ieeexplore.ieee.org/document/8813035">[Paper]</a> 
 
               <h3>Workshops</h3>    

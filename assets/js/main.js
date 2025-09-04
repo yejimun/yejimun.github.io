@@ -180,14 +180,37 @@
 
   // Init AOS
   function aos_init() {
+    // Show loading indicator
+    $('#loading-indicator').show();
+    
     AOS.init({
-      duration: 1000,
-      easing: "ease-in-out-back",
-      once: true
+      duration: 600,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      delay: 0,
+      disable: 'mobile', // Disable on mobile for better performance
+      startEvent: 'DOMContentLoaded' // Start earlier
     });
+    
+    // Hide loading indicator after AOS is initialized
+    setTimeout(function() {
+      $('#loading-indicator').hide();
+      $('main').addClass('loaded');
+    }, 800);
   }
-  $(window).on('load', function() {
+  
+  // Initialize AOS when document is ready instead of waiting for all resources
+  $(document).ready(function() {
     aos_init();
+  });
+  
+  // Fallback: ensure sections are visible even if AOS fails
+  $(document).ready(function() {
+    setTimeout(function() {
+      $('section').css('opacity', '1');
+      $('#loading-indicator').hide();
+    }, 1500);
   });
 
 })(jQuery);
